@@ -168,8 +168,14 @@ alias gSs='git submodule sync'
 alias gSu='git submodule foreach git pull origin master'
 alias gSx='git-submodule-remove'
 
+# Subversion (sv)
+alias gsv='/usr/bin/git svn'
+alias gsvr='/usr/bin/git svn rebase'
+alias gsvd='/usr/bin/git svn dcommit --rmdir'
+
 # Working Copy (w)
 alias gws='git status --ignore-submodules=${_git_status_ignore_submodules} --short'
+alias gst='git status'
 alias gwS='git status --ignore-submodules=${_git_status_ignore_submodules}'
 alias gwd='git diff --no-ext-diff'
 alias gwD='git diff --no-ext-diff --word-diff'
@@ -179,3 +185,6 @@ alias gwc='git clean -n'
 alias gwC='git clean -f'
 alias gwx='git rm -r'
 alias gwX='git rm -rf'
+
+# Gitx
+alias gx='gitx --all'
