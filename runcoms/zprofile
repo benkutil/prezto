@@ -17,8 +17,8 @@ fi
 # Editors
 #
 
-export EDITOR='nano'
-export VISUAL='nano'
+export EDITOR='subl -w'
+export VISUAL='subl -w'
 export PAGER='less'
 
 #
@@ -73,7 +73,7 @@ if [[ ! -d "$TMPDIR" ]]; then
 fi
 
 TMPPREFIX="${TMPDIR%/}/zsh"
-	
+
 
 # Docker Export
 export DOCKER_HOST='tcp://127.0.0.1:2375'
