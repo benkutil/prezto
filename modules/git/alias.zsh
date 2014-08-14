@@ -107,8 +107,12 @@ alias glo='git log --topo-order --pretty=format:"${_git_log_oneline_format}"'
 alias glg='git log --topo-order --all --graph --pretty=format:"${_git_log_oneline_format}"'
 alias glb='git log --topo-order --pretty=format:"${_git_log_brief_format}"'
 alias glc='git shortlog --summary --numbered'
+<<<<<<< HEAD
 alias glr='git rev-parse --short HEAD | tr -d "\n"'
 alias glR='git rev-parse --short HEAD | tr -d "\n" | pbcopy'
+=======
+alias glr='git rev-parse --short HEAD'
+>>>>>>> add aliases
 
 # Merge (m)
 alias gm='git merge'
@@ -183,6 +187,7 @@ alias gtl='git tag --list'
 alias gst='git status'
 alias gws='git status --ignore-submodules=${_git_status_ignore_submodules} --short'
 alias gst='git status'
+alias gws='git status --ignore-submodules=${_git_status_ignore_submodules} --short'
 alias gwS='git status --ignore-submodules=${_git_status_ignore_submodules}'
 alias gwd='git diff --no-ext-diff'
 alias gwD='git diff --no-ext-diff --word-diff'
