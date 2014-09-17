@@ -107,7 +107,6 @@ alias glo='git log --topo-order --pretty=format:"${_git_log_oneline_format}"'
 alias glg='git log --topo-order --all --graph --pretty=format:"${_git_log_oneline_format}"'
 alias glb='git log --topo-order --pretty=format:"${_git_log_brief_format}"'
 alias glc='git shortlog --summary --numbered'
-
 alias glr='git rev-parse --short HEAD | tr -d "\n"'
 alias glR='git rev-parse --short HEAD | tr -d "\n" | pbcopy'
 
