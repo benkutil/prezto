@@ -45,7 +45,6 @@ zstyle ':prezto:load' pmodule \
   'terminal' \
   'tmux'\
   'syntax-highlighting' \
-  'history' \
   'history-substring-search' \
   'prompt' \
 
