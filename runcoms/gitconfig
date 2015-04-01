@@ -5,6 +5,7 @@
 	editor = subl -w
 	whitespace=fix,-indent-with-non-tab,trailing-space,space-before-tab,cr-at-eol
 	autocrlf = input
+	excludesfile = /Users/ktb/.gitignore
 [alias]
 	co = checkout
 	ci = commit
@@ -51,7 +52,7 @@
 	renamed = pink
 
 [svn]
-
+	authorsfile = /Users/ktb/.gitusers
 [push]
 	default = simple
 
