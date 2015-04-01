@@ -17,8 +17,8 @@ fi
 # Editors
 #
 
-export EDITOR='nano'
-export VISUAL='nano'
+export EDITOR='subl -w'
+export VISUAL='subl -w'
 export PAGER='less'
 
 #
@@ -43,7 +43,13 @@ typeset -gU cdpath fpath mailpath path
 
 # Set the list of directories that Zsh searches for programs.
 path=(
-  /usr/local/{bin,sbin}
+  /usr/local/{bin,sbin} \
+  /usr/local/share/npm/bin \
+  ~/.rvm/bin \
+  /.rvm/bin \
+  /usr/{bin,sbin} \
+  /bin \
+  /sbin \
   $path
 )
 

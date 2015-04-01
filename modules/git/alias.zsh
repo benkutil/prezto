@@ -107,6 +107,8 @@ alias glo='git log --topo-order --pretty=format:"${_git_log_oneline_format}"'
 alias glg='git log --topo-order --all --graph --pretty=format:"${_git_log_oneline_format}"'
 alias glb='git log --topo-order --pretty=format:"${_git_log_brief_format}"'
 alias glc='git shortlog --summary --numbered'
+alias glr='git rev-parse --short HEAD | tr -d "\n"'
+alias glR='git rev-parse --short HEAD | tr -d "\n" | pbcopy'
 
 # Merge (m)
 alias gm='git merge'
@@ -114,6 +116,7 @@ alias gmC='git merge --no-commit'
 alias gmF='git merge --no-ff'
 alias gma='git merge --abort'
 alias gmt='git mergetool'
+alias gms='git merge --squash'
 
 # Push (p)
 alias gp='git push'
@@ -168,7 +171,18 @@ alias gSs='git submodule sync'
 alias gSu='git submodule foreach git pull origin master'
 alias gSx='git-submodule-remove'
 
+# Subversion (sv)
+alias gsv='/usr/bin/git svn'
+alias gsvr='/usr/bin/git svn rebase'
+alias gsvd='/usr/bin/git svn dcommit --rmdir'
+
+# Tags (t)
+alias gtl='git tag --list'
+
 # Working Copy (w)
+alias gst='git status'
+alias gws='git status --ignore-submodules=${_git_status_ignore_submodules} --short'
+alias gst='git status'
 alias gws='git status --ignore-submodules=${_git_status_ignore_submodules} --short'
 alias gwS='git status --ignore-submodules=${_git_status_ignore_submodules}'
 alias gwd='git diff --no-ext-diff'
@@ -179,3 +193,6 @@ alias gwc='git clean -n'
 alias gwC='git clean -f'
 alias gwx='git rm -r'
 alias gwX='git rm -rf'
+
+# Gitx
+alias gx='gitx --all'
