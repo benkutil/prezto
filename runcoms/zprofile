@@ -43,7 +43,8 @@ typeset -gU cdpath fpath mailpath path
 
 # Set the list of directories that Zsh searches for programs.
 path=(
-  /usr/local/{bin,sbin}
+  /usr/local/{bin,sbin} \
+  ~/.rvm/bin \
   $path
 )
 
@@ -72,3 +73,10 @@ if [[ ! -d "$TMPDIR" ]]; then
 fi
 
 TMPPREFIX="${TMPDIR%/}/zsh"
+	
+
+# Docker Export
+export DOCKER_HOST='tcp://127.0.0.1:2375'
+
+# Node Path
+export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
