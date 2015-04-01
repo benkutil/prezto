@@ -182,8 +182,6 @@ alias gtl='git tag --list'
 # Working Copy (w)
 alias gst='git status'
 alias gws='git status --ignore-submodules=${_git_status_ignore_submodules} --short'
-alias gst='git status'
-alias gws='git status --ignore-submodules=${_git_status_ignore_submodules} --short'
 alias gwS='git status --ignore-submodules=${_git_status_ignore_submodules}'
 alias gwd='git diff --no-ext-diff'
 alias gwD='git diff --no-ext-diff --word-diff'
